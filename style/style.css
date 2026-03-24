@@ -51,16 +51,11 @@ a {
   opacity: 0.94;
   transition: transform 1s ease, filter 1s ease, opacity 0.75s ease;
 }
-.modal .intro-hanging-heart__line {
-  width: 1px;
-  height: clamp(8rem, 20vh, 13rem);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.92) 100%);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.12);
-}
 .modal .navTag {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 20px 0px;
   z-index: 100;
   position: absolute;
 }
@@ -93,21 +88,78 @@ a {
   color: white;
 }
 .modal .navTag .container p {
-  background-color: white;
+  background-color: transparent;
   padding: 6px 8px 8px 8px;
   border-radius: 8px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
 }
 .modal .navTag .container p span {
   padding: 5px 12px;
   border-radius: 5px;
   font-size: 12.5px;
   cursor: pointer;
-  color: black;
+  color: white;
   transition: all 0.3s ease;
 }
 .modal .navTag .container p span.active {
-  background-color: var(--gold-strong);
+  background-color: rgba(255, 255, 255, 0.26);
+  cursor: pointer;
+}
+.modal .hero .modal-main-info {
+  border: 1px solid red;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.modal .hero .modal-main-info .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+  animation: scroll-indicator 2.8s ease-in-out infinite;
+}
+.modal .hero .modal-main-info .icons .line {
+  width: 1px;
+  height: clamp(8rem, 20vh, 13rem);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.92) 100%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.12);
+}
+.modal .hero .modal-main-info .icons .like {
   color: white;
+  font-size: 32px;
+  animation: scroll-indicator-bounce 2.8s ease-in-out infinite;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.modal .hero .modal-main-info .icons .like.active {
+  color: red;
+}
+.modal .hero .modal-main-info .lock {
+  width: clamp(3.65rem, 6.8vw, 5.15rem);
+  height: clamp(3.65rem, 6.8vw, 5.15rem);
+  color: #ffffff;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 20px;
+}
+.modal .hero .modal-main-info .ptag {
+  width: 300px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 32px;
 }
 
 header {
@@ -244,5 +296,13 @@ nav .container p span.active {
   45% {
     transform: translateY(7px);
     opacity: 1;
+  }
+}
+@keyframes scroll-indicator {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(7px);
   }
 }/*# sourceMappingURL=style.css.map */
