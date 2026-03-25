@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --accent-reference: #da1e2e;
     --accent-reference-deep: #cb182b;
@@ -14,6 +16,7 @@
 }
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +26,7 @@
 .container {
     max-width: 1350px;
     margin: 0 auto;
-    font-family: "Forum", "Times New Roman", serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 a {
@@ -40,6 +43,55 @@ a {
     top: 0;
     left: 0;
     backdrop-filter: blur(5px);
+
+    &.active {
+        transition: all .3s ease;
+
+        .intro-stage__media {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            filter: grayscale(1) contrast(1.08) brightness(0.58) blur(15px);
+            transform: scale(1.25);
+            opacity: 0.99;
+            transition: transform 1s ease, filter 1s ease, opacity 0.80s ease;
+        }
+
+        .hero {
+            &.remove {
+                opacity: 0;
+            }
+
+            .icons {
+                transform: translateY(-20px);
+                opacity: 0;
+                transition: all .3s ease;
+            }
+
+            .h1-tag {
+                transform: translateY(-20px);
+                opacity: 0;
+                transition: all .3s ease;
+            }
+
+            .lock {
+                transform: translateY(20px);
+                opacity: 0;
+                transition: all .3s ease;
+            }
+
+            .ptag {
+                transform: translateY(20px);
+                opacity: 0;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    &.remove {
+        display: none;
+    }
 
     .intro-stage__media {
         width: 100%;
@@ -117,8 +169,6 @@ a {
 
     .hero {
         .modal-main-info {
-            border: 1px solid red;
-
             position: absolute;
             top: 100px;
             left: 50%;
@@ -157,10 +207,17 @@ a {
                 }
             }
 
+            .h1-tag {
+                width: 550px;
+                font-size: 80px;
+                text-align: center;
+                font-weight: 300;
+                line-height: 80px;
+            }
 
             .lock {
-                width: clamp(3.65rem, 6.8vw, 5.15rem);
-                height: clamp(3.65rem, 6.8vw, 5.15rem);
+                width: clamp(3.65rem, 5.8vw, 5.15rem);
+                height: clamp(3.65rem, 5.8vw, 5.15rem);
                 color: #ffffff;
                 fill: none;
                 stroke: currentColor;
@@ -168,11 +225,21 @@ a {
                 stroke-linecap: round;
                 stroke-linejoin: round;
                 border: 1px solid white;
+                background-color: #ffffff0f;
+                backdrop-filter: blur(10px);
                 border-radius: 50%;
                 padding: 20px;
-                
+                margin-top: 40px;
+                transition: all .3s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: translateY(-5px);
+                }
+
             }
-            .ptag{
+
+            .ptag {
                 width: 300px;
                 text-align: center;
                 font-weight: 100;
@@ -271,7 +338,7 @@ nav {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        row-gap: 88px;
+        row-gap: 40px;
         color: white;
 
         .box {
@@ -284,8 +351,11 @@ nav {
 
             h1 {
                 font-size: 100px;
-                font-weight: 200;
+                font-weight: 300;
                 display: none;
+                &.active{
+                    display: block;
+                }
 
                 &.active {
                     display: block;
