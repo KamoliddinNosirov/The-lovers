@@ -263,13 +263,14 @@ nav .container .audio {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 0.5px solid transparent;
   transition: all 0.3s ease;
+  border: 1px solid #6c6c6c;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 nav .container .audio:hover {
   background-color: var(--seal-shadow);
   cursor: pointer;
-  border: 0.5px solid white;
+  border: 1px solid white;
 }
 nav .container .audio i {
   color: var(--gold-strong);
@@ -278,6 +279,8 @@ nav .container p {
   background-color: white;
   padding: 4px 8px 6px 6px;
   border-radius: 8px;
+  border: 1px solid #6c6c6c;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 nav .container p span {
   padding: 5px 12px;
@@ -480,6 +483,82 @@ main .section2 .container .section-info .heart-day {
   transform-origin: center;
   will-change: transform, filter;
   animation: calendar-heart-reference-pulse 2.4s ease-in-out infinite;
+}
+main .section3 {
+  width: 100%;
+  padding: 20px 0px 40px 0px;
+  background-color: white !important;
+}
+main .section3 .container {
+  text-align: center;
+}
+main .section3 .container .block {
+  width: 100%;
+  margin-top: -30px;
+}
+main .section3 .container .block .imgs {
+  width: 80%;
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+main .section3 .container .block .imgs img {
+  width: 60%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .section3 .container .block .info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+main .section3 .container .block .info-section h1 {
+  font-size: 90px;
+  font-weight: 200;
+}
+main .section3 .container .block .info-section h3 {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
+}
+main .section3 .container .block .info-section p {
+  font-size: 16px;
+  font-weight: 300;
+}
+main .section3 .container .block .info-section .manzil {
+  width: 300px;
+  margin-top: 5px;
+}
+main .section3 .container .block .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+main .section3 .container .block .buttons button {
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 1px solid #6c6c6c;
+  background-color: transparent;
+  color: #6c6c6c;
+  transition: all 0.3s ease;
+}
+main .section3 .container .block .buttons button:hover {
+  background-color: #262626;
+  cursor: pointer;
+  color: white;
 }
 @keyframes calendar-heart-reference-pulse {
   0%, 100% {
