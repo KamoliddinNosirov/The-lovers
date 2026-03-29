@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --accent-reference: #da1e2e;
@@ -26,7 +26,8 @@
 
 p,
 a,
-span {
+span,
+small {
     font-family: "Noto Sans", sans-serif;
 }
 
@@ -648,6 +649,223 @@ main {
         }
     }
 
+    .section4 {
+        width: 100%;
+        padding: 50px 0px 40px 0px;
+        background-color: white !important;
+
+        .container {
+            text-align: center;
+
+            .block {
+                margin: 0 auto;
+                width: 60%;
+                border-top: 1px solid rgba(108, 108, 108, 0.12);
+
+                .section-info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    row-gap: 15px;
+                    margin-top: 35px;
+
+                    h1 {
+                        font-size: 85px;
+                        font-weight: 300;
+                    }
+
+                    p {
+                        font-size: 22px;
+                        width: 65%;
+                        font-weight: 300;
+                        color: rgba(84, 84, 84, 0.84);
+                    }
+
+                    .card {
+                        text-align: start;
+                        width: 750px;
+                        padding: 40px 30px;
+                        display: flex;
+                        align-items: start;
+                        justify-content: start;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        border: 2px solid rgba(237, 184, 184, 0.82);
+                        border-radius: 15px;
+                        background: radial-gradient(circle at 94% 12%, rgba(255, 204, 204, 0.38), transparent 28%), radial-gradient(circle at 82% 54%, rgba(255, 227, 216, 0.18), transparent 30%), linear-gradient(180deg, rgba(255, 254, 251, 0.98) 0%, rgba(255, 249, 243, 0.98) 100%);
+                        box-shadow: 0 12px 28px rgba(81, 48, 48, 0.05);
+
+                        .user {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            padding-bottom: 10px;
+
+                            p {
+                                width: 100% !important;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-transform: uppercase;
+                            }
+
+                            h1 {
+                                font-size: 35px;
+                                text-transform: uppercase;
+                                font-weight: 100;
+                                letter-spacing: 0.12em;
+
+
+                            }
+                        }
+
+                        .card-number {
+                            display: flex;
+                            align-items: start;
+                            justify-content: start;
+                            flex-direction: column;
+                            flex-direction: 5px;
+                            width: 100%;
+                            border-top: 1px solid rgba(108, 108, 108, 0.12);
+                            padding-top: 25px;
+
+                            p {
+                                width: 100% !important;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-transform: uppercase;
+                            }
+
+                            h2 {
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                font-size: 40px;
+                                gap: 20px;
+                                margin-top: 8px;
+                                font-weight: 300;
+
+                                span {
+                                    line-height: 1.08;
+                                    letter-spacing: 0.12em;
+                                    word-spacing: 0.08em;
+                                }
+                            }
+
+                            h4 {
+                                font-size: 32px;
+                                font-weight: 200;
+                                color: rgba(84, 84, 84, 0.84);
+                                width: 58%;
+                                padding: 15px 0px;
+                            }
+                        }
+
+                        button {
+                            width: 100%;
+                            padding: 15px 0px;
+                            border-radius: 8px;
+                            background-color: transparent;
+                            cursor: pointer;
+                            border: 1px solid #6c6c6c;
+                            transition: all .3s ease;
+                            font-size: 20px;
+                            color: #6c6c6c;
+                            text-transform: uppercase;
+
+                            &:hover {
+                                background-color: #262626;
+                                cursor: pointer;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .section5 {
+        width: 100%;
+        padding: 60px 0px 40px 0px;
+        background-color: white !important;
+
+        .container {
+            text-align: center;
+
+            .section-info {
+                border-top: 1px solid rgba(108, 108, 108, 0.12);
+                width: 60%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                row-gap: 15px;
+                padding-top: 40px;
+
+                h1 {
+                    font-size: 90px;
+                    width: 60%;
+                    font-weight: 100;
+                    line-height: 80px;
+                }
+
+                .count-down {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+                    margin-top: 50px;
+
+                    .time-unit {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        font-size: 40px;
+                        color: var(--gold-soft);
+                        line-height: 50px;
+                        position: relative;
+
+                        span {
+                            font-family: "Playfair Display", serif;
+                            font-size: 70px;
+                            font-weight: 300;
+                        }
+
+                        small {
+                            font-weight: 300;
+                            letter-spacing: 0.12em;
+                        }
+                    }
+
+                    .dot {
+                        margin-top: -10px;
+                        font-size: 60px !important;
+                        color: var(--gold-soft);
+
+                    }
+                }
+                p{
+                    font-size: 30px;
+                    font-weight: 200;
+                    margin-top: 30px;
+                }
+                .ring{
+                    width: 300px;
+                    height: 300px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
     @keyframes calendar-heart-reference-pulse {
 
         0%,
@@ -667,4 +885,18 @@ main {
         }
     }
 
+}
+
+footer{
+    border-top: 1px solid rgba(108, 108, 108, 0.12);
+    padding: 40px;
+    .container{
+        text-align: center;
+        p{
+            width: 190px;
+            margin: 0 auto;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(108, 108, 108, 0.12);
+        }
+    }
 }
