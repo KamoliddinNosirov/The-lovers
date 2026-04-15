@@ -948,5 +948,74 @@ footer {
 @media (max-width: 467px) {
     .container {
         width: 100%;
+        padding: 0px 15px;
+    }
+
+    .modal {
+        .navTag {
+            .container {
+                .audio {
+                    font-size: 15px;
+                }
+
+                p {
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .hero {
+            .container {
+                .h1-tag {
+                    font-size: 55px;
+                    margin-top: 10px;
+                }
+
+                .lock {
+                    padding: 15px;
+                }
+
+                .ptag {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    header {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-size: 100% !important;
+        background-position-y: 0px !important;
+        border: 1px solid red;
+        .main-nav {
+            .container {
+                .audio {
+                    font-size: 15px;
+                }
+
+                p {
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }.container {
+            .audio {
+                font-size: 15px;
+            }
+
+            p {
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        }
     }
 }
