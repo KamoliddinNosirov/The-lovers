@@ -395,7 +395,7 @@ writeData()
 
 const bgheader = ()=>{
   const btn_top = document.querySelector(".btn-top")
-  if(window.scrollY / 3 > 1000){
+  if(window.scrollY / 3 > 100){
     btn_top.classList.add("scroll-show")
   }else{
     btn_top.classList.remove("scroll-show")

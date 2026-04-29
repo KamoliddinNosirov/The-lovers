@@ -219,7 +219,7 @@ a {
                 font-size: 80px;
                 text-align: center;
                 font-weight: 200;
-                line-height: 70px;
+                line-height: 90px;
             }
 
             .lock {
@@ -851,7 +851,7 @@ main {
 
                     .dot {
                         margin-top: -10px;
-                        font-size: 60px !important;
+                        font-size: 60px;
                         color: var(--gold-soft);
 
                     }
@@ -1023,7 +1023,7 @@ footer {
         .hero {
             .container {
                 .box {
-                    margin-top: 320px;
+                    margin-top: 250px;
 
                     h1 {
                         font-size: 40px;
@@ -1060,24 +1060,27 @@ footer {
         .container {
             .section-info {
                 width: 100% !important;
+
                 h1 {
                     font-size: 30px !important;
                 }
 
                 .calendar-grid {
-                    width: 100% !important; 
+                    width: 100% !important;
                 }
             }
         }
     }
 
-    .section3{
+    .section3 {
         overflow: hidden;
-        .container{
-            .imgs{
+
+        .container {
+            .imgs {
                 margin-top: -160px !important;
                 width: 100% !important;
-                img{
+
+                img {
                     width: 100% !important;
                     height: 100% !important;
                     object-fit: contain !important;
@@ -1085,12 +1088,12 @@ footer {
                 }
             }
 
-            .info-section{
-                h1{
+            .info-section {
+                h1 {
                     font-size: 30px !important;
                 }
 
-                h3{
+                h3 {
                     font-size: 18px !important;
                     width: 40%;
                     padding: 10px 0px;
@@ -1100,44 +1103,53 @@ footer {
         }
     }
 
-    .section4{
-        .container{
-            .block{
+    .section4 {
+        .container {
+            .block {
                 width: 100% !important;
-                .section-info{
-                    h1{
+
+                .section-info {
+                    h1 {
                         font-size: 30px !important;
                     }
-                    p{
+
+                    p {
                         font-size: 18px !important;
                         width: 90% !important;
                     }
-                    .card{
+
+                    .card {
                         width: 100% !important;
                         padding: 20px 20px !important;
-                        .user{
-                            p{
+
+                        .user {
+                            p {
                                 font-size: 18px !important;
                             }
-                            h1{
+
+                            h1 {
                                 font-size: 18px !important;
                                 font-weight: bold !important;
                             }
                         }
-                        .card-number{
-                            p{
+
+                        .card-number {
+                            p {
                                 font-size: 18px !important;
                             }
-                            h2{
-                                font-size: 18px  !important;
+
+                            h2 {
+                                font-size: 18px !important;
                                 gap: 10px !important;
                             }
-                            h4{
+
+                            h4 {
                                 width: 100% !important;
                                 font-size: 17px !important;
                             }
                         }
-                        button{
+
+                        button {
                             font-size: 16px !important;
                         }
                     }
@@ -1146,29 +1158,65 @@ footer {
         }
     }
 
-    .section5{
-        .container{
-            .section-info{
+    .section5 {
+        .container {
+            .section-info {
                 width: 100% !important;
-                h1{
+
+                h1 {
                     font-size: 28px !important;
                     width: 80% !important;
                     line-height: 35px !important;
                 }
-                .count-down{
-                    gap: 0px !important;
-                    .time-unit{
+
+                .count-down {
+                    gap: 20px !important;
+
+                    .time-unit {
                         font-size: 18px !important;
-                        line-height: 20px !important;
-                        span{
-                            font-size: 20px !important;
+                        line-height: 25px !important;
+
+                        span {
+                            font-size: 22px !important;
                         }
-                        .dot{
-                            font-size: 10px !important;
-                        }
+                    }
+
+                    .dot {
+                        font-size: 40px !important;
                     }
                 }
             }
+        }
+    }
+
+    footer {
+        .container {
+            p {
+                line-height: 30px;
+            }
+        }
+    }
+
+    .btn-top {
+        position: fixed;
+        right: 20px;
+        bottom: -100px;
+        transition: all 1s ease;
+        border: none !important;
+        background-color: transparent;
+        font-size: 30px;
+
+        a {
+            color: var(--gold-soft);
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+            cursor: pointer;
+        }
+
+        &.scroll-show {
+            bottom: 30px;
         }
     }
 

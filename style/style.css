@@ -195,7 +195,7 @@ a {
   font-size: 80px;
   text-align: center;
   font-weight: 200;
-  line-height: 70px;
+  line-height: 90px;
 }
 .modal .hero .modal-main-info .lock {
   width: clamp(3.65rem, 5.8vw, 5.15rem);
@@ -739,7 +739,7 @@ main .section5 .container .section-info .count-down .time-unit small {
 }
 main .section5 .container .section-info .count-down .dot {
   margin-top: -10px;
-  font-size: 60px !important;
+  font-size: 60px;
   color: var(--gold-soft);
 }
 main .section5 .container .section-info p {
@@ -856,7 +856,7 @@ footer .container p {
     font-size: 11px;
   }
   header .hero .container .box {
-    margin-top: 320px;
+    margin-top: 250px;
   }
   header .hero .container .box h1 {
     font-size: 40px;
@@ -952,16 +952,38 @@ footer .container p {
     line-height: 35px !important;
   }
   .section5 .container .section-info .count-down {
-    gap: 0px !important;
+    gap: 20px !important;
   }
   .section5 .container .section-info .count-down .time-unit {
     font-size: 18px !important;
-    line-height: 20px !important;
+    line-height: 25px !important;
   }
   .section5 .container .section-info .count-down .time-unit span {
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
-  .section5 .container .section-info .count-down .time-unit .dot {
-    font-size: 10px !important;
+  .section5 .container .section-info .count-down .dot {
+    font-size: 40px !important;
+  }
+  footer .container p {
+    line-height: 30px;
+  }
+  .btn-top {
+    position: fixed;
+    right: 20px;
+    bottom: -100px;
+    transition: all 1s ease;
+    border: none !important;
+    background-color: transparent;
+    font-size: 30px;
+  }
+  .btn-top a {
+    color: var(--gold-soft);
+  }
+  .btn-top:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+  .btn-top.scroll-show {
+    bottom: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
